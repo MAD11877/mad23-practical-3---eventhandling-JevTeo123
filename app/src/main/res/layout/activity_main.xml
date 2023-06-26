@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        android:textAlignment="center"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txtWelcome"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="0dp"
+        android:text="Hello World!"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="205dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="#4169e1"
+        android:layout_above="@id/textView2"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:baselineAlignBottom="false"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="226dp"
+        android:layout_height="173dp"
+        android:layout_above="@id/textView2"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-27dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <Button
+        android:id="@+id/btnFollow"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWelcome"
+        android:layout_alignLeft="@id/txtWelcome"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="0dp"
+        android:text="Follow"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWelcome"
+        android:layout_alignRight="@id/txtWelcome"
+        android:layout_marginTop="-1dp"
+        android:text="Message"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+
+</RelativeLayout>
