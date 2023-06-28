@@ -28,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent myRecvIntent = getIntent();
-        int myRecvText = myRecvIntent.getIntExtra("random", 0);
+        Bundle extras = getIntent().getExtras();
+        String stringVariableName = extras.getString("StringVariableName");
+        int myRecvText = Integer.parseInt(stringVariableName);
         TextView myMessage = findViewById(R.id.textView2);
-        myMessage.setText("Hello World!");
+        myMessage.setText("MAD " + myRecvText);
         Log.v(title, "Recv: "+ myRecvText);
 
         Button btnFollow = findViewById(R.id.btnFollow);
@@ -54,6 +55,5 @@ public class MainActivity extends AppCompatActivity {
     public void onFollowbtnClicked(View view){
         TextView txtFollow = findViewById(R.id.txtWelcome);
         txtFollow.setText("Followed");
-
     }
 }
